@@ -1,0 +1,4 @@
+let lista="";
+document.querySelectorAll("#jsc_c_hi .x1lq5wgf").forEach(ksm_el=>{
+   lista+=`$trs[]="${ksm_el.querySelectorAll(".x193iq5w span")[1].innerText}";\n`;
+});

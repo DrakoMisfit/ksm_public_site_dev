@@ -1,0 +1,33 @@
+#cookie-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 500;
+}
+#cookie-main-container{
+    position: absolute;
+    width: 90%;
+    height: 200px;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 501;
+    background-color: #fff;
+}
+#cookie-main-container #close-cookie-btn{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #202428;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}

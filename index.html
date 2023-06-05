@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ksmdt.pl | Strona główna</title>
+
+    <link rel="stylesheet" href="./fonts/fontello/css/fontello.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
+    <script src="./js/index.js" defer></script>
+    
+    <!-- OSM -->
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css">
+
+    <!-- cookie API - My author's script -->
+    <script src="./js/drako-cookies.js" defer></script>
+    <link rel="stylesheet" href="./css/drako-cookies.css">
+</head>
+<body>
+    <header id="index">
+        <nav>
+            <div id="menu-container" class="hidden-menu" expaded="false">
+                <img id="logo-menu" src="./imgs/250x250_ksm_logo.jpg">
+                <div class="expand-menu">
+                    <i class="demo-icon icon-menu-2"></i>
+                </div>
+                <div id="menu-items">
+                    <div class="item" site="#index" onclick="ChangeActiveMenuItem(this)">strona główna</div>
+                    <div class="item" site="#about-us" onclick="ChangeActiveMenuItem(this)">o Nas</div>
+                    <div class="item" site="#calendar" onclick="ChangeActiveMenuItem(this)">kalendarz</div>
+                    <div class="item" site="#contact" onclick="ChangeActiveMenuItem(this)">kontakt</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="images" class="section">
+                <!-- <div class="title-section">tutaj będą nasze 3 zdjęcia w formie slidera</div> -->
+                <div class="prev-image"><i class="demo-icon icon-left-dir-1"></i></div>
+                <div class="next-image"><i class="demo-icon icon-right-dir-1"></i></div>
+                <div id="photo-container"></div>
+                <div class="bar-img-active">
+                    <div class="step step-noactive"></div>
+                    <div class="step step-noactive"></div>
+                    <div class="step step-noactive"></div>
+                </div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="section" id="about-us">
+                <div class="title-section">Sekcja opisu naszej grupy</div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="section" id="calendar">
+                <div class="title-section">Kalendarz wydarzeń</div>
+                <div id="calendar-content-container">
+                    <div class="weeks-name">
+                        <div class="header-tile">PN</div>
+                        <div class="header-tile">WT</div>
+                        <div class="header-tile">ŚR</div>
+                        <div class="header-tile">CZW</div>
+                        <div class="header-tile">PT</div>
+                        <div class="header-tile">SB</div>
+                        <div class="header-tile">ND</div>
+                    </div>
+                    <div id="calendar-tiles"></div>
+                </div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="section" id="map">
+                <div class="title-section">Tutaj nas znajdziesz:</div>
+                <p class="google-maps-link-map">
+                    <a href="https://www.google.pl/maps/place/Dom+Parafialny/@50.1755957,20.9817127,105m/data=!3m1!1e3!4m6!3m5!1s0x473d7eb275fa93e9:0x1cdf58642f4152d1!8m2!3d50.1756137!4d20.9815569!16s%2Fg%2F11fqpc4n4d" target="_blank"><i class="demo-icon icon-map"></i> zobacz w Google Maps <i class="demo-icon icon-map"></i></a>
+                    
+                </p>
+                <div id="main-osm-map"></div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="section" id="contact">
+                <div class="title-section">Skontaktuj się z Nami <span style="color:red;font-weight: bold;">(NIE KLIKAĆ)</span></div>
+                <form id="contact-form">
+                    <input type="text" id="user-fname" placeholder="Podaj swoje imię...">
+                    <input type="text" id="user-email" placeholder="Podaj swój adres email...">
+                    <textarea id="message-text" placeholder="Wpisz swoją wiadomość..."></textarea>
+                    <input type="button" value="wyślij" id="SendMessage">
+                </form>
+            </div>
+
+            <!-- <div class="space"></div> -->
+            
+        </div>
+
+
+
+        <!-- <div id="up-site"><i class="demo-icon icon-up-thin"></i></div> -->
+    </main>
+    <footer>
+        <div id="footer">
+            &copy; 2023 - KSM Dąbrowa Tarnowska
+        </div>
+    </footer>
+
+    <div id="black-bg"></div>
+    <div id="calendar-popup"></div>
+</body>
+</html>

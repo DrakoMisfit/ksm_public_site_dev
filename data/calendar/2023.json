@@ -1,0 +1,42 @@
+{
+    "blank_tiles":[6,2,2,5,0,3,5,1,4,6,2,4],
+    "styczen":[],
+    "luty":[],
+    "marzec":[],
+    "kwiecien":[
+        {
+            "data":"03-04-2023",
+            "title":"Spotkanie formatyjne KSM",
+            "description":"Tradycyjnie. Dom Parafialny o godzinie 19:00 w salce młodzieżowej - tj. parter #1"
+        },
+        {
+            "data":"10-04-2023",
+            "title":"Spotkanie formatyjne KSM",
+            "description":"Tradycyjnie. Dom Parafialny o godzinie 19:00 w salce młodzieżowej - tj. parter #2"
+        },
+        {
+            "data":"17-04-2023",
+            "title":"Spotkanie formatyjne KSM",
+            "description":"Tradycyjnie. Dom Parafialny o godzinie 19:00 w salce młodzieżowej - tj. parter #3"
+        },
+        {
+            "data":"24-04-2023",
+            "title":"Spotkanie formatyjne KSM",
+            "description":"Tradycyjnie. Dom Parafialny o godzinie 19:00 w salce młodzieżowej - tj. parter #4"
+        }
+    ],
+    "maj":[],
+    "czerwiec":[
+        {
+            "data":"08-06-2023",
+            "title":"Wyjazd na koncert",
+            "description":"Wyjazd na koncert JSJD."
+        }
+    ],
+    "lipiec":[],
+    "sierpien":[],
+    "wrzesien":[],
+    "pazdziernik":[],
+    "listopad":[],
+    "grudzien":[]
+}
